@@ -38,7 +38,7 @@ Get-Content ./PowerShell/Microsoft.PowerShell_profile.ps1 | Out-File -Append $PR
 
 *NOTE* The profile file is in the following path:
 
-- PowerShell Core (6.x+): `~/Documents/PowerShell/Microsoft.PowerShell_profile.ps1`
+- PowerShell Core (6.+): `~/Documents/PowerShell/Microsoft.PowerShell_profile.ps1`
 - Windows PowerShell: `~/Documents/WindowsPowerShell/Microsoft.PowerShell_profile.ps1`
 
 ### Setup prompt
