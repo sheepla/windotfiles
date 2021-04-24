@@ -70,3 +70,8 @@ cp ./ahk/* "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\"
 2. Type `shell:startup`
 3. Press `Enter` to open it.
 
+## Windows Terminal
+
+```powershell
+cp ./windows-terminal/settings.json "$env:Appdata\Local\Microsoft\Windows Terminal\"
+```
