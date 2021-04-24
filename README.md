@@ -2,7 +2,7 @@
 
 dotfiles for Windows
 
-## Scoop packages
+## ✅ Scoop packages
 
 Install <a href="https://github.com/lukesampson/scoop">scoop</a>. (the package manager for Windows)
 
@@ -23,7 +23,7 @@ Install all packages with scoop:
 scoop install ((cat scoop-pkglist.txt) -join " ")
 ```
 
-## PowerShell
+## 🐚 PowerShell
 
 ### Setup profile
 
@@ -50,7 +50,7 @@ scoop install starship
 . $PROFILE # Reload PowerShell profile
 ```
 
-## Auto Hot Key
+## ⌨ Auto Hot Key
 
 Install <a href="https://www.autohotkey.com/">Auto Hot Key</a> and launch `./ahk/main.ahk`.
 
