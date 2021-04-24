@@ -1,4 +1,4 @@
-e windotfiles
+# windotfiles
 
 dotfiles for Windows
 
