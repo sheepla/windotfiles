@@ -38,7 +38,7 @@ Get-Content ./PowerShell/Microsoft.PowerShell_profile.ps1 | Out-File -Append $PR
 
 *NOTE* The profile file is in the following path:
 
-- PowerShell Core (6.+): `~/Documents/PowerShell/Microsoft.PowerShell_profile.ps1`
+- PowerShell Core (6.0+): `~/Documents/PowerShell/Microsoft.PowerShell_profile.ps1`
 - Windows PowerShell: `~/Documents/WindowsPowerShell/Microsoft.PowerShell_profile.ps1`
 
 ### Setup prompt
@@ -70,13 +70,13 @@ cp ./ahk/* "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\"
 2. Type `shell:startup`
 3. Press `Enter` to open it.
 
-## Windows Terminal
+## 💻 Windows Terminal
 
 ```powershell
 cp ./windows-terminal/settings.json "$env:Appdata\Local\Microsoft\Windows Terminal\"
 ```
 
-## Alacritty
+##　💻 Alacritty
 
 ```powershell
 cp ./alacritty/alacritty.yml "$env:AppData\Alacritty\alacritty.yml
