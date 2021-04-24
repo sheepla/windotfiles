@@ -2,7 +2,7 @@
 
 dotfiles for Windows
 
-## Scoop packages
+## ✅ Scoop packages
 
 Install <a href="https://github.com/lukesampson/scoop">scoop</a>. (the package manager for Windows)
 
@@ -23,7 +23,7 @@ Install all packages with scoop:
 scoop install ((cat scoop-pkglist.txt) -join " ")
 ```
 
-## PowerShell
+## 🐚 PowerShell
 
 ### Setup profile
 
@@ -38,7 +38,7 @@ Get-Content ./PowerShell/Microsoft.PowerShell_profile.ps1 | Out-File -Append $PR
 
 *NOTE* The profile file is in the following path:
 
-- PowerShell Core (6.x+): `~/Documents/PowerShell/Microsoft.PowerShell_profile.ps1`
+- PowerShell Core (6.+): `~/Documents/PowerShell/Microsoft.PowerShell_profile.ps1`
 - Windows PowerShell: `~/Documents/WindowsPowerShell/Microsoft.PowerShell_profile.ps1`
 
 ### Setup prompt
@@ -50,7 +50,7 @@ scoop install starship
 . $PROFILE # Reload PowerShell profile
 ```
 
-## Auto Hot Key
+## ⌨ Auto Hot Key
 
 Install <a href="https://www.autohotkey.com/">Auto Hot Key</a> and launch `./ahk/main.ahk`.
 
