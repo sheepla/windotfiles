@@ -49,4 +49,4 @@ LAlt & ]::Send, #^{Right}
 ;LAlt & RButton::AltTabMenu  ; マウス中ボタンでAlt+Tabメニュー
 
 ; vim.ahk
-#Include ./muhenkan-vim.ahk
+#Include muhenkan-vim.ahk
