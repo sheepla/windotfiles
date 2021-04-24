@@ -1,0 +1,273 @@
+// For documentation on these settings, see: https://aka.ms/terminal-documentation
+{
+    "$schema": "https://aka.ms/terminal-profiles-schema",
+
+    "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+
+    // --------------------------------------------------
+    // Global settings
+    // --------------------------------------------------
+    // https://aka.ms/terminal-global-settings
+
+    "copyOnSelect": true,
+
+    "copyFormatting": false,
+
+    // A profile specifies a command to execute paired with information about how it should look and feel.
+    // Each one of them will appear in the 'New Tab' dropdown,
+    //   and can be invoked from the commandline with `wt.exe -p xxx`
+    // To learn more about profiles, visit https://aka.ms/terminal-profile-settings
+    "profiles":
+    {
+        "defaults":
+        {
+            // --------------------------------------------------
+            // Default settings
+            // --------------------------------------------------
+            "fontFace": "Sarasa Term J",
+            "fontSize": 12,
+            "cursorShape": "filledBox",
+            "cursorColor": "#84a0c6",
+            "useAcrylic": false,
+            "acrylicOpacity": 0.8,
+            "colorScheme": "Iceberg"
+        },
+        "list":
+        [
+            {
+                // --------------------------------------------------
+                // Windows PowerShell (powershell.exe)
+                // --------------------------------------------------
+                "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
+                "name": "Windows PowerShell",
+                "commandline": "powershell.exe -NoLogo -ExecutionPolicy RemoteSigned",
+                "hidden": true
+            },
+            {
+                // --------------------------------------------------
+                // Command Prompt (cmd.exe)
+                // --------------------------------------------------
+                "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
+                "name": "Cmd",
+                "commandline": "cmd.exe",
+                "hidden": true
+            },
+            {
+                // --------------------------------------------------
+                // PowerShell Core (pwsh.exe)
+                // --------------------------------------------------
+                "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
+                "hidden": false,
+                "name": "PowerShell",
+                "commandline": "pwsh.exe -NoLogo -ExecutionPolicy RemoteSigned",
+                "source": "Windows.Terminal.PowershellCore",
+			    "colorScheme": "Iceberg"
+            },
+            {
+                // --------------------------------------------------
+                // WSL (ubuntu)
+                // --------------------------------------------------
+                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
+                "hidden": false,
+                "name": "Ubuntu",
+                "source": "Windows.Terminal.Wsl",
+                "fontSize": 12,
+                "cursorShape": "filledBox",
+                "cursorColor": "#84a0c6",
+                "useAcrylic": false,
+                "acrylicOpacity": 0.8,
+                "colorScheme": "Iceberg"
+            },
+            {
+                // --------------------------------------------------
+                // Azure Cloud Shell
+                // --------------------------------------------------
+                "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
+                "hidden": true,
+                "name": "Azure Cloud Shell",
+                "source": "Windows.Terminal.Azure"
+            }
+        ]
+    },
+
+    // --------------------------------------------------
+    // Colorscheme
+    // --------------------------------------------------
+    // To learn more about color schemes, visit https://aka.ms/terminal-color-schemes
+    "schemes": [
+        // Iceberg
+        {
+            "name":      "Iceberg",
+            "foreground":   "#9da3c6",
+            "background":   "#161821",
+            "black":        "#2e3244",
+            "blue":         "#84a0c6",
+            "cyan":         "#89b8c2",
+            "green":        "#b4be82",
+            "purple":       "#a093c7",
+            "red":          "#e27878",
+            "white":        "#9da3c6",
+            "yellow":       "#e2a478",
+            "brightBlack":  "#444b71",
+            "brightBlue":   "#84a0c6",
+            "brightCyan":   "#89b8c2",
+            "brightGreen":  "#b4be82",
+            "brightPurple": "#a093c7",
+            "brightRed":    "#e27878",
+            "brightWhite":  "#d2d4de",
+            "brightYellow": "#e2a478"
+        },
+        // Gruvbox Dark
+        {
+            "name": "GruvboxDark",
+            "foreground":   "#ebdbb2",
+            "background":   "#282828",
+            "black":        "#1d2021",
+            "red":          "#fb4934",
+            "green":        "#b8bb26",
+            "yellow":       "#fe8019",
+            "blue":         "#83a598",
+            "purple":       "#d3869b",
+            "cyan":         "#8ec07c",
+            "white":        "#fbf1c7",
+            "brightBlack":  "#665c54",
+            "brightRed":    "#fb4934",
+            "brightGreen":  "#b8bb26",
+            "brightYellow": "#fe8019",
+            "brightBlue":   "#83a598",
+            "brightPurple": "#d3869b",
+            "brightCyan":   "#8ec07c",
+            "brightWhite":  "#fbf1c7"
+        },
+        // Gruvbox Light
+        {
+            "name": "GruvboxLight",
+            "foreground":   "#3c3836",
+            "background":   "#fbf1c7",
+            "black":        "#f9f5d7",
+            "red":          "#9d0006",
+            "green":        "#79740e",
+            "yellow":       "#af3a03",
+            "blue":         "#076678",
+            "purple":       "#8f3f71",
+            "cyan":         "#427b58",
+            "white":        "#3c3836",
+            "brightBlack":  "#504945",
+            "brightRed":    "#9d0006",
+            "brightGreen":  "#79740e",
+            "brightYellow": "#af3a03",
+            "brightBlue":   "#076678",
+            "brightPurple": "#8f3f71",
+            "brightCyan":   "#427b58",
+            "brightWhite":  "#282828"
+        },
+        // Solarized Dark
+        {
+            "name": "SolarizedDark",
+            "foreground":   "#93a1a1",
+            "background":   "#002b36",
+            "black":        "#073642",
+            "red":          "#dc322f",
+            "green":        "#859900",
+            "yellow":       "#b58900",
+            "blue":         "#268bd2",
+            "purple":       "#6c71c4",
+            "cyan":         "#2aa198",
+            "white":        "#93a1a1",
+            "brightBlack":  "#586e75",
+            "brightRed":    "#dc322f",
+            "brightGreen":  "#859900",
+            "brightYellow": "#b58900",
+            "brightBlue":   "#268bd2",
+            "brightPurple": "#6c71c4",
+            "brightCyan":   "#2aa198",
+            "brightWhite":  "#93a1a1"
+        },
+        // Solarized Lignt
+        {
+            "name": "SolarizedLight",
+            "foreground":   "#002b36",
+            "background":   "#eee8d5",
+            "black":        "#073642",
+            "red":          "#dc322f",
+            "green":        "#859900",
+            "yellow":       "#b58900",
+            "blue":         "#268bd2",
+            "purple":       "#6c71c4",
+            "cyan":         "#2aa198",
+            "white":        "#93a1a1",
+            "brightBlack":  "#586e75",
+            "brightRed":    "#dc322f",
+            "brightGreen":  "#859900",
+            "brightYellow": "#b58900",
+            "brightBlue":   "#268bd2",
+            "brightPurple": "#6c71c4",
+            "brightCyan":   "#2aa198",
+            "brightWhite":  "#93a1a1"
+        },
+        // Nord
+        {
+            "name": "Nord",
+            "foreground":   "#D8DEE9",
+            "background":   "#2E3440",
+            "black":        "#3B4252",
+            "red":          "#BF616A",
+            "green":        "#A3BE8C",
+            "yellow":       "#EBCB8B",
+            "blue":         "#81A1C1",
+            "purple":       "#B48EAD",
+            "cyan":         "#8FBCBB",
+            "white":        "#ECEFF4",
+            "brightBlack":  "#4C566A",
+            "brightRed":    "#BF616A",
+            "brightGreen":  "#A3BE8C",
+            "brightYellow": "#EBCB8B",
+            "brightBlue":   "#81A1C1",
+            "brightPurple": "#B48EAD",
+            "brightCyan":   "#8FBCBB",
+            "brightWhite":  "#ECEFF4"
+        }
+    ],
+
+    // --------------------------------------------------
+    // Key bindings
+    // --------------------------------------------------
+    // Add custom actions and keybindings to this array.
+    // To unbind a key combination from your defaults.json, set the command to "unbound".
+    // To learn more about actions and keybindings, visit https://aka.ms/terminal-keybindings
+    "actions":
+    [
+        
+        // To learn more about selection, visit https://aka.ms/terminal-selection
+        { "command": {"action": "copy", "singleLine": false }, "keys": "ctrl+shift+c" },
+        { "command": "paste", "keys": "ctrl+shift+v" },
+
+        // Scroll up/down
+        { "command": "scrollUp", "keys": ["ctrl+shift+u"] },
+        { "command": "scrollDown", "keys": ["ctrl+shift+d"] },
+
+        // Open the search box
+        { "command": "find", "keys": "ctrl+shift+/" },
+
+        // - "split": "auto" makes this pane open in the direction that provides the most surface area.
+        // - "splitMode": "duplicate" makes the new pane use the focused pane's profile.
+        // To learn more about panes, visit https://aka.ms/terminal-panes
+        { "command": { "action": "splitPane", "split": "auto", "splitMode": "duplicate" }, "keys": "ctrl+shift+|" },
+
+        // Move around pane
+        { "command": { "action": "moveFocus", "direction": "down" }, "keys": [ "ctrl+shift+j" ] },
+        { "command": { "action": "moveFocus", "direction": "up" }, "keys": [ "ctrl+shift+k" ] },
+        { "command": { "action": "moveFocus", "direction": "left" }, "keys": [ "ctrl+shift+h" ] },
+        { "command": { "action": "moveFocus", "direction": "right" }, "keys": [ "ctrl+shift+l" ] },
+
+        { "command": { "action": "resizePane", "direction": "down" }, "keys": [ "alt+shift+j" ] },
+        { "command": { "action": "resizePane", "direction": "up" }, "keys": [ "alt+shift+k" ] },
+        { "command": { "action": "resizePane", "direction": "left" }, "keys": [ "alt+shift+h" ] },
+        { "command": { "action": "resizePane", "direction": "right" }, "keys": [ "alt+shift+l" ] },
+
+        // Switch tab
+        { "command": "nextTab", "keys": [ "ctrl+shift+]" ] },
+        { "command": "prevTab", "keys": [ "ctrl+shift+[" ] }
+
+    ]
+}
