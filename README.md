@@ -76,7 +76,7 @@ cp ./ahk/* "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Startup\"
 cp ./windows-terminal/settings.json "$env:Appdata\Local\Microsoft\Windows Terminal\"
 ```
 
-##　💻 Alacritty
+## 💻 Alacritty
 
 ```powershell
 cp ./alacritty/alacritty.yml "$env:AppData\Alacritty\alacritty.yml
