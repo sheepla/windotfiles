@@ -43,7 +43,7 @@ Get-Content ./PowerShell/Microsoft.PowerShell_profile.ps1 | Out-File -Append $PR
 
 ### Setup prompt
 
-After installing <a href=""https://starship.rs/>starship prompt</a> and reloading the profile, the prompt will be set automatically.
+After installing <a href="https://starship.rs/">starship prompt</a> and reloading the profile, the prompt will be set automatically.
 
 ```powershell
 scoop install starship
