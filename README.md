@@ -1,10 +1,10 @@
-# windotfiles
+e windotfiles
 
 dotfiles for Windows
 
 ## Scoop packages
 
-Install <a href=""https://github.com/lukesampson/scoop>scoop</a>. (the package manager for Windows)
+Install <a href="https://github.com/lukesampson/scoop">scoop</a>. (the package manager for Windows)
 
 ```powershell
 (New-Object System.Net.WebClient).DownloadString('https://get.scoop.sh') | Out-File -Encoding Default Install-Scoop.ps1
